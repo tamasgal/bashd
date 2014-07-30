@@ -18,7 +18,7 @@ if [ -x /usr/bin/tput ] && tput setaf 1 >&/dev/null; then
   c_seatray='\[\e[97m\]\[\e[41m\]'
   c_python='\[\e[97m\]\[\e[42m\]'
   c_vimode='\[\e[97m\]\[\e[40m\]'
-  c_git='\[\e[43m\]\[\e[38;5;229m\]'
+  c_git='\[\e[43m\]\[\e[38;229m\]'
 else
   c_reset=
   c_user=
