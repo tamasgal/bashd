@@ -1,3 +1,3 @@
 set -o vi
-export PYTHONSTARTUP=$HOME/rc/pythonstartup
+export PYTHONSTARTUP=$HOME/.rc/pythonstartup
 
