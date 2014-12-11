@@ -16,6 +16,7 @@ if [ -x /usr/bin/tput ] && tput setaf 1 >&/dev/null; then
   c_time='\[\e[47m\]\[\e[30m\]'
   c_flags='\[\e[97m\]\[\e[46m\]'
   c_seatray='\[\e[97m\]\[\e[41m\]'
+  c_km3pipe='\[\e[37m\]\[\e[46m\]'
   c_jpp='\[\e[37m\]\[\e[41m\]'
   c_aanet='\[\e[37m\]\[\e[104m\]'
   c_python='\[\e[97m\]\[\e[42m\]'
@@ -33,6 +34,7 @@ fi
 __prompt_flags ()
 {
   #__vi_mode
+  __km3pipe_env
   __aanet_env
   __jpp_env
   __seatray_env
@@ -67,6 +69,15 @@ __aanet_env ()
 {
   if [ ! -z "$AADIR" ]; then
     echo -n "${c_aanet}A${c_reset}"
+  else
+    echo -n ""
+  fi
+}
+
+__km3pipe_env ()
+{
+  if [ ! -z "$KM3PIPEDIR" ]; then
+    echo -n "${c_km3pipe}K${c_reset}"
   else
     echo -n ""
   fi
