@@ -16,7 +16,7 @@ if [ -x /usr/bin/tput ] && tput setaf 1 >&/dev/null; then
   c_time='\[\e[47m\]\[\e[30m\]'
   c_flags='\[\e[97m\]\[\e[46m\]'
   c_seatray='\[\e[97m\]\[\e[41m\]'
-  c_jpp='\[\e[97m\]\[\e[41m\]'
+  c_jpp='\[\e[97m\]\[\e[44m\]'
   c_python='\[\e[97m\]\[\e[42m\]'
   c_vimode='\[\e[97m\]\[\e[40m\]'
   c_git='\[\e[43m\]\[\e[38;229m\]'
