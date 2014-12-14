@@ -68,8 +68,6 @@ alias doctest='python -m doctest'
 
 alias less='less -FSRX'
 
-alias stefannerven='write mpp460'
-
 alias qlogin_1G_1h_1G='qlogin -l fsize=1G,ct=1:00:00,vmem=1G'
 alias qlogin_2G_1h_1G='qlogin -l fsize=1G,ct=1:00:00,vmem=1G'
 alias qlogin_5G_1h_1G='qlogin -l fsize=1G,ct=1:00:00,vmem=1G'
@@ -77,10 +75,6 @@ alias qlogin_10G_3h_1G='qlogin -l fsize=1G,ct=1:00:00,vmem=1G'
 alias qlogin_15G_5h_1G='qlogin -l fsize=1G,ct=1:00:00,vmem=1G'
 alias qlogin_20G_5h_1G='qlogin -l fsize=1G,ct=1:00:00,vmem=1G'
 
-alias notebook='ipython notebook --pylab=inline ~/Dropbox/Notebooks'
-
-alias sqlantares='sqlplus ant_read/kyoread@"(DESCRIPTION = (ADDRESS = (PROTOCOL = TCP)(HOST = ccdbora01.in2p3.fr)(PORT = 1521)) (CONNECT_DATA = (SERVER = DEDICATED) (SERVICE_NAME = antares.in2p3.fr)))"'
-
-# seatray/icetray
+# cmake
 alias rebuild_debug='rm -f CMakeCache.txt && cmake ../src -DSYSTEM_PACKAGES=True -DCMAKE_BUILD_TYPE=Debug && make -j3'
 alias rebuild_release='rm -f CMakeCache.txt && cmake ../src -DSYSTEM_PACKAGES=True -DCMAKE_BUILD_TYPE=Release && make -j3'
